@@ -12,11 +12,19 @@ public class ConsoleInput implements MauMauInput {
     }
 
     @Override
-    public int getUserChoice() {
+    public Integer getUserChoice() {
         System.out.println("Wählen Sie eine Kartennummer oder geben Sie -1 ein, um eine Karte vom Stapel zu ziehen");
         String choice = scanner.nextLine();
+        Integer nummer;
 
-        return Integer.parseInt(choice);
+        try {
+            nummer = Integer.parseInt(choice);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Falsche Eingabe. -1 ausgewählt");
+            nummer = null;
+        }
+
+        return nummer;
     }
 
     @Override

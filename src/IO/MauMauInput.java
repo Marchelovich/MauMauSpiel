@@ -3,7 +3,7 @@ package IO;
 import Entity.Card;
 
 public interface MauMauInput {
-    int getUserChoice();
+    Integer getUserChoice();
 
     boolean addSecondPlayers();
 

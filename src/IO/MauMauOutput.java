@@ -1,7 +1,7 @@
 package IO;
 
-import Entity.Card;
 import Entity.AbstractPlayer;
+import Entity.Card;
 import Entity.Statistic;
 
 import java.util.ArrayList;

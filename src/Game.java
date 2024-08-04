@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Game {
-
-    static final int HUMAN_SKIP_TURN_CHOICE = -1;
-
     private final Deck deck;
     private final ArrayList<AbstractPlayer> players;
     private final ArrayList<AbstractPlayer> finishedPlayers;
@@ -122,8 +119,8 @@ public class Game {
 
     private void humanTakeTurn(HumanPlayer player) {
         output.showHand(player.getHand());
-        int choice = input.getUserChoice();
-        if (choice == HUMAN_SKIP_TURN_CHOICE) {
+        Integer choice = input.getUserChoice();
+        if (choice == null) {
             if (!deck.isEmpty()) {
                 Card retrievedCard = deck.drawCard();
                 player.drawCard(retrievedCard);

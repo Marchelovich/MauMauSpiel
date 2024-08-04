@@ -56,7 +56,7 @@ public class Statistic {
                     sume += 11;
                     break;
                 }
-                case Card.Value.Yehn: {
+                case Card.Value.Zehn: {
                     sume += 10;
                     break;
                 }

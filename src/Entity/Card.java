@@ -1,6 +1,6 @@
 package Entity;
 
-import static Entity.Card.Value.*;
+import static Entity.Card.Value.Bube;
 
 public class Card {
 
@@ -17,7 +17,7 @@ public class Card {
         Sieben,
         Acht,
         Neun,
-        Yehn,
+        Zehn,
         Bube,
         Dame,
         König,
